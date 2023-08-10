@@ -42,6 +42,7 @@ main {
 }
 
 .text {
+    color: var(--text-color);
     font-size: 20px;
     width: 340px;
     padding-top: 25px;
@@ -57,10 +58,6 @@ main {
     text-align: center;
 }
 
-.text {
-    color: #fff;
-}
-
 .button {
     border-radius: 50%;
     width: 50px;
@@ -69,4 +66,30 @@ main {
     cursor: pointer;
     background-color: var(--advice-dice-color);
     margin-top: 26px;
+}
+
+@media (max-width: 425px) {
+    
+    .container {
+        background-color: var(--advice-card-color);
+        border-radius: 10px;
+        width: 340px;
+        height: 270px;
+    }
+
+    .text {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button{
+        margin-top: 32px;
+    }
 }
