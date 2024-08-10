@@ -25,6 +25,7 @@ main {
     border-radius: 10px;
     width: 450px;
     height: 250px;
+    
 }
 
 .card {
@@ -47,6 +48,11 @@ main {
     width: 340px;
     padding-top: 25px;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
 }
 
 .divider{
@@ -55,7 +61,12 @@ main {
 
 .text-box {
     width: 80%;
+    height: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
@@ -66,6 +77,10 @@ main {
     cursor: pointer;
     background-color: var(--advice-dice-color);
     margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 425px) {
@@ -82,14 +97,7 @@ main {
         width: 250px;
     }
 
-    .text-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .button{
-        margin-top: 20px;
+        margin-top: 44px;
     }
 }
