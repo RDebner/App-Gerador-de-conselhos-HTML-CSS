@@ -29,7 +29,7 @@ botao.addEventListener('click' , async function exibirConselho () {
 setTimeout(async () => {
     idConselho.innerText = await idDoConselho()
     textoConselho.innerText = await mensagemConselho()
-});
+}, 0);
 
 
 
